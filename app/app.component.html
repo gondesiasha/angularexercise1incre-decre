@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style='text-align: center'>
+<h1>
+  {{ title }}
+</h1>
+<br>
+<br>
+</div>
+
+<div class=a style="text-align:center">
+ 
+  <h2> {{ name }}</h2>
+
+  <h2>${{ count }} </h2>
+  <div>
+    
+  <button (click)="handlewithdrawalClick($event)" style="background-color:rgb(245, 245, 127)" [disabled]="isdisabled">Withdraw $10</button>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <button (click)="handledepositClick($event)" style="background-color:yellowgreen">deposit $10</button>
+
+ 
+  
+  </div>
+  
+</div>
+
+<router-outlet></router-outlet>
